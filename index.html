@@ -21,7 +21,9 @@
       </head>
       <body class="bg-gray-100">
         <header class="bg-slate-800 text-white p-4 sm:w-full">
-          <nav class="container mx-auto block sm:flex sm:justify-between sm:items-center">
+          <nav
+            class="container mx-auto block sm:flex sm:justify-between sm:items-center"
+          >
             <div class="flex items-center justify-center">
               <img
                 src="./img/codoacodo.png"
@@ -33,17 +35,34 @@
             <ul
               class="sm:flex items-center space-y-4 sm:space-y-0 sm:space-x-5"
             >
-              <li><a href="#">La conferencia</a></li>
-              <li><a href="#">los oradores</a></li>
-              <li><a href="#">lugar y fecha</a></li>
-              <li><a href="#">Conviertete en orador</a></li>
+              <li>
+                <a href="#" class="hover:underline-offset-4 hover:underline"
+                  >La conferencia</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline-offset-4 hover:underline"
+                  >los oradores</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline-offset-4 hover:underline"
+                  >lugar y fecha</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:underline-offset-4 hover:underline"
+                  >Conviertete en orador</a
+                >
+              </li>
               <button
-                class="bg-green-600 text-white py-1 px-2 rounded-2xl flex items-center border border-2"
+                class="bg-green-600 text-white py-1 px-2 rounded-2xl flex items-center border border-2 group"
               >
                 <img
                   src="./img/icons8-ticket-64.png"
                   alt="icono ticket"
                   width="30"
+                  class="group-hover:scale-125 group-hover:transition group-hover:duration-700 group-hover:ease-in-out"
                 />
                 <a href="#" class="ml-1"> Comprar Tickets</a>
               </button>
@@ -265,6 +284,5 @@
         </footer>
       </body>
     </html>
-   
   </body>
 </html>
