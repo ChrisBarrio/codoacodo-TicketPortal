@@ -5,284 +5,314 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/codoacodo.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>ConfBsAs || tp_Integrador</title>
   </head>
-  <body>
-    <!DOCTYPE html>
-    <html lang="es">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Mi Página con Tailwind CSS</title>
-        <link
-          href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
-          rel="stylesheet"
-        />
-      </head>
-      <body class="bg-gray-100">
-        <header class="bg-slate-800 text-white p-4 sm:w-full">
-          <nav
-            class="container mx-auto block sm:flex sm:justify-between sm:items-center"
+
+  <body class="bg-gray-100">
+    <header class="bg-slate-800 p-4 text-white sm:w-full">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center">
+          <img
+            src="./img/codoacodo.png"
+            alt="Logo de la empresa"
+            class="mr-2 h-10 w-10"
+          />
+          <h1 class="logo text-2xl font-semibold">Conf Bs As</h1>
+        </div>
+        <nav class="hidden space-x-4 md:flex items-center">
+          <a href="#" class="hover:underline hover:underline-offset-4"
+            >La conferencia</a
           >
-            <div class="flex items-center justify-center">
-              <img
-                src="./img/codoacodo.png"
-                alt="logo codo a codo"
-                width="80"
-              />
-              <h1 class="logo text-2xl font-semibold">Conf Bs As</h1>
-            </div>
-            <ul
-              class="sm:flex items-center space-y-4 sm:space-y-0 sm:space-x-5"
+          <a href="#" class="hover:underline hover:underline-offset-4"
+            >los oradores</a
+          >
+          <a href="#" class="hover:underline hover:underline-offset-4"
+            >lugar y fecha</a
+          >
+          <a href="#" class="hover:underline hover:underline-offset-4"
+            >Conviertete en orador</a
+          >
+          <button
+            class="group flex items-center rounded-2xl border border-2 bg-green-600 px-2 py-1 text-white"
+          >
+            <img
+              src="./img/icons8-ticket-64.png"
+              alt="icono ticket"
+              width="30"
+              class="group-hover:scale-125 group-hover:transition group-hover:duration-700 group-hover:ease-in-out"
+            />
+            <a href="#" class="ml-1"> Comprar Tickets</a>
+          </button>
+        </nav>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <li>
-                <a href="#" class="hover:underline-offset-4 hover:underline"
-                  >La conferencia</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:underline-offset-4 hover:underline"
-                  >los oradores</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:underline-offset-4 hover:underline"
-                  >lugar y fecha</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:underline-offset-4 hover:underline"
-                  >Conviertete en orador</a
-                >
-              </li>
-              <button
-                class="bg-green-600 text-white py-1 px-2 rounded-2xl flex items-center border border-2 group"
-              >
-                <img
-                  src="./img/icons8-ticket-64.png"
-                  alt="icono ticket"
-                  width="30"
-                  class="group-hover:scale-125 group-hover:transition group-hover:duration-700 group-hover:ease-in-out"
-                />
-                <a href="#" class="ml-1"> Comprar Tickets</a>
-              </button>
-            </ul>
-          </nav>
-        </header>
-
-        <section
-          class="bg-white text-white py-16 bg-[url('./img/hawaii.jpg')] flex justify-end"
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden flex flex-col items-center space-y-4 bg-gray-800 text-white md:hidden"
+      >
+        <a href="#" class="hover:underline hover:underline-offset-4"
+          >La conferencia</a
         >
-          <div class="container text-center w-full mx-auto mt-48">
-            <h2 class="text-4xl font-semibold mb-4">
-              Bienvenidos a Conf Bs As
-            </h2>
-            <p class="mb-6">
-              ¿Estás listo para una experiencia que cambiará tu vida? Únete a
-              nosotros en el evento de oradores más emocionante de Buenos Aires
-              y descubre la inspiración que estabas buscando.
+        <a href="#" class="hover:underline hover:underline-offset-4"
+          >los oradores</a
+        >
+        <a href="#" class="hover:underline hover:underline-offset-4"
+          >lugar y fecha</a
+        >
+        <a href="#" class="hover:underline hover:underline-offset-4"
+          >Conviertete en orador</a
+        >
+        <button
+          class="group flex items-center rounded-2xl border border-2 bg-green-600 px-2 py-1 text-white"
+        >
+          <img
+            src="./img/icons8-ticket-64.png"
+            alt="icono ticket"
+            width="30"
+            class="group-hover:scale-125 group-hover:transition group-hover:duration-700 group-hover:ease-in-out"
+          />
+          <a href="#" class="ml-1"> Comprar Tickets</a>
+        </button>
+      </div>
+    </header>
+    <section
+      class="bg-white text-white py-16 bg-[url('./img/hawaii.jpg')] flex justify-end"
+    >
+      <div class="container text-center w-full mx-auto mt-48">
+        <h2 class="text-4xl font-semibold mb-4">Bienvenidos a Conf Bs As</h2>
+        <p class="mb-6">
+          ¿Estás listo para una experiencia que cambiará tu vida? Únete a
+          nosotros en el evento de oradores más emocionante de Buenos Aires y
+          descubre la inspiración que estabas buscando.
+        </p>
+        <div class="space-x-4">
+          <a
+            href="#"
+            class="bg-transparent border border-1 text-white px-6 py-2 rounded-full hover:bg-yellow-500"
+            >Quiero ser orador</a
+          >
+
+          <a
+            href="#"
+            class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-700"
+          >
+            Comprar Tickets</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <figure class="h-1/2">
+            <img
+              src="./img/steve.jpg"
+              alt="steve jobs"
+              class="w-full h-full object-cover mb-4 rounded"
+            />
+          </figure>
+          <div class="h-1/2 overflow-hidden">
+            <div class="flex space-x-2 mt-4">
+              <span
+                class="bg-yellow-200 text-black px-2 py-1 rounded-full text-xs"
+                >Javascript</span
+              >
+              <span
+                class="bg-cyan-500 text-white px-2 py-1 rounded-full text-xs"
+                >React</span
+              >
+            </div>
+            <h2 class="text-xl font-semibold my-2">Steve Jobs</h2>
+            <p class="text-gray-600 mb-2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              quod eligendi dicta pariatur modi. Quisquam velit facilis eius
+              adipisci repudiandae incidunt est inventore debitis ullam,
+              molestiae quidem culpa asperiores vero.
             </p>
-            <div class="space-x-4">
-              <a
-                href="#"
-                class="bg-transparent border border-1 text-white px-6 py-2 rounded-full hover:bg-yellow-500"
-                >Quiero ser orador</a
-              >
+          </div>
+        </div>
 
-              <a
-                href="#"
-                class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-700"
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <figure class="h-1/2">
+            <img
+              src="./img/bill.jpg"
+              alt="bill gates"
+              class="w-full h-full object-cover mb-4 rounded"
+            />
+          </figure>
+          <div class="h-1/2 overflow-hidden">
+            <div class="flex space-x-2 mt-4">
+              <span
+                class="bg-yellow-200 text-black px-2 py-1 rounded-full text-xs"
+                >Javascript</span
               >
-                Comprar Tickets</a
+              <span
+                class="bg-cyan-500 text-white px-2 py-1 rounded-full text-xs"
+                >React</span
               >
             </div>
+            <h2 class="text-xl font-semibold my-2">Bill Gates</h2>
+            <p class="text-gray-600 mb-2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+              quod eligendi dicta pariatur modi. Quisquam velit facilis eius
+              adipisci repudiandae incidunt est inventore debitis ullam,
+              molestiae quidem culpa asperiores vero. Eos, laborum labore
+              dolorem harum a voluptatem reprehenderit nesciunt. Natus
+              voluptatibus nisi molestiae dolorum neque reiciendis officia
+              veniam nostrum sint?
+            </p>
           </div>
-        </section>
+        </div>
 
-        <section class="bg-gray-100 py-16">
-          <div
-            class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <figure class="h-1/2">
+            <img
+              src="./img/ada.jpeg"
+              alt="Ada"
+              class="w-full h-full object-cover mb-4 rounded"
+            />
+          </figure>
+          <div class="h-1/2">
+            <div class="flex space-x-2 mt-4">
+              <span
+                class="bg-slate-600 text-white px-2 py-1 rounded-full text-xs"
+                >Negocios</span
+              >
+              <span class="bg-red-500 text-white px-2 py-1 rounded-full text-xs"
+                >Startups</span
+              >
+            </div>
+            <h2 class="text-xl font-semibold my-2">Ada Lovelace</h2>
+            <p class="text-gray-600 mb-2">
+              Suscipit quod eligendi dicta pariatur modi. Quisquam velit facilis
+              eius adipisci repudiandae incidunt est inventore debitis ullam,
+              molestiae quidem culpa asperiores vero. Eos, laborum labore
+              dolorem harum a voluptatem reprehenderit nesciunt. Natus
+              voluptatibus nisi molestiae dolorum neque reiciendis officia
+              veniam nostrum sint?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div
+        class="container mx-auto items-center bg-gray-700 text-white flex flex-col sm:flex-row"
+      >
+        <div class="sm:w-1/2 w-full border border-1 border-gray-300">
+          <img src="./img/honolulu.jpg" alt="buenos aires" />
+        </div>
+
+        <div class="sm:w-1/2 p-8 mb-auto w-full flex flex-col">
+          <h2 class="text-2xl font-semibold mb-4">Bs As - Octubre</h2>
+          <p class="mb-4">
+            Buenos Aires, la vibrante capital de Argentina, es una ciudad que
+            cautiva a visitantes de todo el mundo con su rica mezcla de cultura,
+            historia y estilo de vida cosmopolita. Situada a orillas del Río de
+            la Plata, Buenos Aires es una metrópolis que combina la elegancia
+            europea con la pasión latina.
+          </p>
+          <p class="mb-4">
+            La arquitectura de la ciudad es igualmente impresionante, con
+            edificios históricos como el Teatro Colón y el Obelisco. Buenos
+            Aires es un lugar donde el pasado y el presente se entrelazan de
+            manera fascinante, ofreciendo una experiencia única a quienes la
+            visitan.
+          </p>
+          <a
+            href="#"
+            class="bg-transparent text-white w-40 border border-1 border-gray-300 px-6 py-2 rounded-lg hover:bg-orange-600 mt-10"
+            >Conocé más</a
           >
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <figure class="h-1/2">
-                <img
-                  src="./img/steve.jpg"
-                  alt="steve jobs"
-                  class="w-full h-full object-cover mb-4 rounded"
-                />
-              </figure>
-              <div class="h-1/2 overflow-hidden">
-                <div class="flex space-x-2 mt-4">
-                  <span
-                    class="bg-yellow-200 text-black px-2 py-1 rounded-full text-xs"
-                    >Javascript</span
-                  >
-                  <span
-                    class="bg-cyan-500 text-white px-2 py-1 rounded-full text-xs"
-                    >React</span
-                  >
-                </div>
-                <h2 class="text-xl font-semibold my-2">Steve Jobs</h2>
-                <p class="text-gray-600 mb-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit quod eligendi dicta pariatur modi. Quisquam velit
-                  facilis eius adipisci repudiandae incidunt est inventore
-                  debitis ullam, molestiae quidem culpa asperiores vero.
-                </p>
-              </div>
-            </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <figure class="h-1/2">
-                <img
-                  src="./img/bill.jpg"
-                  alt="bill gates"
-                  class="w-full h-full object-cover mb-4 rounded"
-                />
-              </figure>
-              <div class="h-1/2 overflow-hidden">
-                <div class="flex space-x-2 mt-4">
-                  <span
-                    class="bg-yellow-200 text-black px-2 py-1 rounded-full text-xs"
-                    >Javascript</span
-                  >
-                  <span
-                    class="bg-cyan-500 text-white px-2 py-1 rounded-full text-xs"
-                    >React</span
-                  >
-                </div>
-                <h2 class="text-xl font-semibold my-2">Bill Gates</h2>
-                <p class="text-gray-600 mb-2">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Suscipit quod eligendi dicta pariatur modi. Quisquam velit
-                  facilis eius adipisci repudiandae incidunt est inventore
-                  debitis ullam, molestiae quidem culpa asperiores vero. Eos,
-                  laborum labore dolorem harum a voluptatem reprehenderit
-                  nesciunt. Natus voluptatibus nisi molestiae dolorum neque
-                  reiciendis officia veniam nostrum sint?
-                </p>
-              </div>
-            </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-              <figure class="h-1/2">
-                <img
-                  src="./img/ada.jpeg"
-                  alt="Ada"
-                  class="w-full h-full object-cover mb-4 rounded"
-                />
-              </figure>
-              <div class="h-1/2">
-                <div class="flex space-x-2 mt-4">
-                  <span
-                    class="bg-slate-600 text-white px-2 py-1 rounded-full text-xs"
-                    >Negocios</span
-                  >
-                  <span
-                    class="bg-red-500 text-white px-2 py-1 rounded-full text-xs"
-                    >Startups</span
-                  >
-                </div>
-                <h2 class="text-xl font-semibold my-2">Ada Lovelace</h2>
-                <p class="text-gray-600 mb-2">
-                  Suscipit quod eligendi dicta pariatur modi. Quisquam velit
-                  facilis eius adipisci repudiandae incidunt est inventore
-                  debitis ullam, molestiae quidem culpa asperiores vero. Eos,
-                  laborum labore dolorem harum a voluptatem reprehenderit
-                  nesciunt. Natus voluptatibus nisi molestiae dolorum neque
-                  reiciendis officia veniam nostrum sint?
-                </p>
-              </div>
-            </div>
+    <section class="bg-white py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-2xl mx-auto mb-8 lg:max-w-[10%] md:max-w-[30%]">
+          conviertete en un <b>Orador</b>
+        </h2>
+        <form class="mx-auto max-w-md">
+          <div class="mb-4">
+            <input
+              type="text"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              placeholder="Nombre"
+            />
           </div>
-        </section>
-
-        <section class="py-16">
-          <div
-            class="container mx-auto items-center bg-gray-700 text-white flex flex-col sm:flex-row"
+          <div class="mb-4">
+            <input
+              type="text"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              placeholder="Apellido"
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              class="w-full px-4 py-2 border border-gray-300 rounded-md"
+              rows="4"
+              placeholder="Sobre que quieres hablar?"
+            ></textarea>
+            <p class="text-xs text-start pl-1">
+              Recuerda incluir un título para tu charla.
+            </p>
+          </div>
+          <button
+            class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 w-full"
+            type="submit"
           >
-            <div class="sm:w-1/2 w-full border border-1 border-gray-300">
-              <img src="./img/honolulu.jpg" alt="buenos aires" />
-            </div>
+            Enviar
+          </button>
+        </form>
+      </div>
+    </section>
 
-            <div class="sm:w-1/2 p-8 mb-auto w-full flex flex-col">
-              <h2 class="text-2xl font-semibold mb-4">Bs As - Octubre</h2>
-              <p class="mb-4">
-                Buenos Aires, la vibrante capital de Argentina, es una ciudad
-                que cautiva a visitantes de todo el mundo con su rica mezcla de
-                cultura, historia y estilo de vida cosmopolita. Situada a
-                orillas del Río de la Plata, Buenos Aires es una metrópolis que
-                combina la elegancia europea con la pasión latina.
-              </p>
-              <p class="mb-4">
-                La arquitectura de la ciudad es igualmente impresionante, con
-                edificios históricos como el Teatro Colón y el Obelisco. Buenos
-                Aires es un lugar donde el pasado y el presente se entrelazan de
-                manera fascinante, ofreciendo una experiencia única a quienes la
-                visitan.
-              </p>
-              <a
-                href="#"
-                class="bg-transparent text-white w-40 border border-1 border-gray-300 px-6 py-2 rounded-lg hover:bg-orange-600 mt-10"
-                >Conocé más</a
-              >
-            </div>
-          </div>
-        </section>
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto text-center">
+        <ul class="flex justify-center space-x-4">
+          <li><a href="#">La conferencia</a></li>
+          <li><a href="#">los oradores</a></li>
+          <li><a href="#">lugar y fecha</a></li>
+          <li><a href="#">Conviertete en orador</a></li>
+          <li><a href="#" class="text-green-600">Comprar Tickets</a></li>
+        </ul>
+        <p class="mt-4">&copy; 2023 💛 Mi Sitio.</p>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
 
-        <section class="bg-white py-16">
-          <div class="container mx-auto text-center">
-            <h2 class="text-2xl mx-auto mb-8 lg:max-w-[10%] md:max-w-[30%]">
-              conviertete en un <b>Orador</b>
-            </h2>
-            <form class="mx-auto max-w-md">
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md"
-                  placeholder="Nombre"
-                />
-              </div>
-              <div class="mb-4">
-                <input
-                  type="text"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md"
-                  placeholder="Apellido"
-                />
-              </div>
-              <div class="mb-4">
-                <textarea
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md"
-                  rows="4"
-                  placeholder="Sobre que quieres hablar?"
-                ></textarea>
-                <p class="text-xs text-start pl-1">
-                  Recuerda incluir un título para tu charla.
-                </p>
-              </div>
-              <button
-                class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 w-full"
-                type="submit"
-              >
-                Enviar
-              </button>
-            </form>
-          </div>
-        </section>
-
-        <footer class="bg-gray-900 text-white py-8">
-          <div class="container mx-auto text-center">
-            <ul class="flex justify-center space-x-4">
-              <li><a href="#">La conferencia</a></li>
-              <li><a href="#">los oradores</a></li>
-              <li><a href="#">lugar y fecha</a></li>
-              <li><a href="#">Conviertete en orador</a></li>
-              <li><a href="#" class="text-green-600">Comprar Tickets</a></li>
-            </ul>
-            <p class="mt-4">&copy; 2023 💛 Mi Sitio.</p>
-          </div>
-        </footer>
-      </body>
-    </html>
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        console.log('click');
+      });
+    </script>
   </body>
 </html>
